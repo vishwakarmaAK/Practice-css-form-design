@@ -18,24 +18,40 @@ main {
     text-align: center;
 }
 
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    background-color: #fff;
+}
+
+.ball ~ .ball {
+    background-color: #ff4550;
+    top: unset;
+    bottom: 20%;
+}
+
 main>div {
     padding: 2rem;
     flex: 1;
 }
-a{
+
+a {
     text-decoration: none;
     color: gray;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
-   
+
 
 }
 
-button{
-    background-color:orangered;
+button {
+    background-color: orangered;
     padding: .7rem 2.5rem;
     border-radius: 2rem;
     border: none;
@@ -89,7 +105,7 @@ main>div:nth-child(2) {
 }
 
 
-h2{
+h2 {
     font-size: xx-large;
-    
+
 }
